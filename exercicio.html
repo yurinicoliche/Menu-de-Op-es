@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu de Opções</title>
+</head>
+
+<body>
+    <h2>Javascript - exemplo 21</h2>
+    <hr>
+    <p><b>**Menu de opções**</b></p>
+    <p>1. Inserir Dados </p>
+    <p>2 .Consultar Dados </p>
+    <p>3. Editar Dados </p>
+    <p>4. Excluir Dados </p>
+    <p><b>Informe uma opção:</b></p>
+    <input id="opção" value="">
+    <br>
+    <button onclick="função()">Opção</button> 
+    <p id="Ex21"></p>
+
+    <script>
+        function função() {
+            opção = document.getElementById("opção").value;
+            switch (opção) {
+                case "1":
+                    mensagem = "Escolhida a Inserção de Dados"
+                    break
+                case "2":
+                    mensagem = "Escolhida a Consulta de Dados"
+                    break
+                case "3":
+                    mensagem = "Escolhida a Edição de Dados"
+                    break
+                case "4":
+                    mensagem = "Escolhida a Exclusão de Dados"
+                    break
+                default:
+                    mensagem = "Opção Inválida"
+            }
+               document.getElementById('Ex21').innerHTML = mensagem;
+        }
+
+</script>
+  
+</body>
+
+</html>
